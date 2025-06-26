@@ -3,15 +3,15 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: 'localhost',
-        pathname: '/**'
+        hostname: 'big-boy-food-server.onrender.com',
+        pathname: '/**',
       },
       {
         hostname: 'via.placeholder.com',
-        pathname: '/**'
-      }
-    ]
-  }
-}
+        pathname: '/**',
+      },
+    ],
+  },
+};
 
-export default nextConfig
+export default nextConfig;
