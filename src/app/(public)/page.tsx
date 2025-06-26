@@ -112,11 +112,18 @@ export default async function Home() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative overflow-hidden">
-                  <Image
-                    src={dish.image}
+                  <img
+                    src={
+                      dish.image.startsWith('/static') ||
+                      dish.image.startsWith('http://localhost:4000/static')
+                        ? dish.image.replace(
+                            /^\/static|^http:\/\/localhost:4000\/static/,
+                            'https://api-bigboy.duthanhduoc.com/static',
+                          )
+                        : dish.image
+                    }
                     width={400}
                     height={300}
-                    quality={100}
                     alt={dish.name}
                     className="object-cover w-full h-48 group-hover:scale-110 transition-transform duration-300"
                   />
