@@ -100,7 +100,17 @@ const orderTableColumns: ColumnDef<OrderItem>[] = [
         <Popover>
           <PopoverTrigger asChild>
             <Image
-              src={row.original.dishSnapshot.image}
+              src={
+                row.original.dishSnapshot.image.startsWith('/static') ||
+                row.original.dishSnapshot.image.startsWith(
+                  'http://localhost:4000/static',
+                )
+                  ? row.original.dishSnapshot.image.replace(
+                      /^\/static|^http:\/\/localhost:4000\/static/,
+                      'https://api-bigboy.duthanhduoc.com/static',
+                    )
+                  : row.original.dishSnapshot.image
+              }
               alt={row.original.dishSnapshot.name}
               width={50}
               height={50}
@@ -110,7 +120,17 @@ const orderTableColumns: ColumnDef<OrderItem>[] = [
           <PopoverContent>
             <div className="flex flex-wrap gap-2">
               <Image
-                src={row.original.dishSnapshot.image}
+                src={
+                  row.original.dishSnapshot.image.startsWith('/static') ||
+                  row.original.dishSnapshot.image.startsWith(
+                    'http://localhost:4000/static',
+                  )
+                    ? row.original.dishSnapshot.image.replace(
+                        /^\/static|^http:\/\/localhost:4000\/static/,
+                        'https://api-bigboy.duthanhduoc.com/static',
+                      )
+                    : row.original.dishSnapshot.image
+                }
                 alt={row.original.dishSnapshot.name}
                 width={100}
                 height={100}
