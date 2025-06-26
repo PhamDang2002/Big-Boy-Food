@@ -3,15 +3,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'big-boy-food.vercel.app',
-        pathname: '/static/**',
+        hostname: 'https://api-bigboy.duthanhduoc.com',
+        pathname: '/**',
       },
-      // Nếu vẫn muốn dùng localhost khi dev:
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        pathname: '/static/**',
+        hostname: 'via.placeholder.com',
+        pathname: '/**',
       },
     ],
   },
