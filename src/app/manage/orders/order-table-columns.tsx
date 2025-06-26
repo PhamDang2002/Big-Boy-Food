@@ -99,7 +99,7 @@ const orderTableColumns: ColumnDef<OrderItem>[] = [
       <div className="flex items-center gap-2">
         <Popover>
           <PopoverTrigger asChild>
-            <Image
+            <img
               src={
                 row.original.dishSnapshot.image.startsWith('/static') ||
                 row.original.dishSnapshot.image.startsWith(
@@ -119,7 +119,7 @@ const orderTableColumns: ColumnDef<OrderItem>[] = [
           </PopoverTrigger>
           <PopoverContent>
             <div className="flex flex-wrap gap-2">
-              <Image
+              <img
                 src={
                   row.original.dishSnapshot.image.startsWith('/static') ||
                   row.original.dishSnapshot.image.startsWith(
