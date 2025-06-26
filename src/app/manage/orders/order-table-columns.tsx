@@ -107,7 +107,7 @@ const orderTableColumns: ColumnDef<OrderItem>[] = [
                 )
                   ? row.original.dishSnapshot.image.replace(
                       /^\/static|^http:\/\/localhost:4000\/static/,
-                      'https://api-bigboy.duthanhduoc.com/static',
+                      'https://big-boy-food-server.onrender.com/static',
                     )
                   : row.original.dishSnapshot.image
               }
@@ -127,7 +127,7 @@ const orderTableColumns: ColumnDef<OrderItem>[] = [
                   )
                     ? row.original.dishSnapshot.image.replace(
                         /^\/static|^http:\/\/localhost:4000\/static/,
-                        'https://api-bigboy.duthanhduoc.com/static',
+                        'https://big-boy-food-server.onrender.com/static',
                       )
                     : row.original.dishSnapshot.image
                 }

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import dishApiRequest from '@/apiRequests/dish';
 import { formatCurrency } from '@/lib/utils';
 import { DishListResType } from '@/schemaValidations/dish.schema';
@@ -118,7 +119,7 @@ export default async function Home() {
                       dish.image.startsWith('http://localhost:4000/static')
                         ? dish.image.replace(
                             /^\/static|^http:\/\/localhost:4000\/static/,
-                            'https://api-bigboy.duthanhduoc.com/static',
+                            'https://big-boy-food-server.onrender.com/static',
                           )
                         : dish.image
                     }
