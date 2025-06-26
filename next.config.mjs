@@ -3,12 +3,15 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: 'localhost',
-        pathname: '/**',
+        protocol: 'https',
+        hostname: 'big-boy-food-server.onrender.com',
+        pathname: '/static/**',
       },
+      // Nếu vẫn muốn dùng localhost khi dev:
       {
-        hostname: 'via.placeholder.com',
-        pathname: '/**',
+        protocol: 'http',
+        hostname: 'localhost',
+        pathname: '/static/**',
       },
     ],
   },
