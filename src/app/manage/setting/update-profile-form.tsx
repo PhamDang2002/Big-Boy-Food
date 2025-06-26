@@ -137,7 +137,7 @@ export default function UpdateProfileForm() {
                           if (file) {
                             setFile(file);
                             field.onChange(
-                              'http://localhost:3000/' + field.name,
+                              'https://big-boy-food.vercel.app/' + field.name,
                             );
                           }
                         }}

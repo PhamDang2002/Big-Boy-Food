@@ -170,7 +170,7 @@ export default function AddEmployee() {
                             if (file) {
                               setFile(file);
                               field.onChange(
-                                'http://localhost:3000/' + file.name,
+                                'https://big-boy-food.vercel.app/' + file.name,
                               );
                             }
                           }}
