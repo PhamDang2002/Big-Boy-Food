@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: 'https://big-boy-food-server.onrender.com',
+        hostname: 'localhost',
         pathname: '/**',
       },
       {
