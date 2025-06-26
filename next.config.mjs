@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'big-boy-food-server.onrender.com',
+        hostname: 'big-boy-food.vercel.app',
         pathname: '/static/**',
       },
       // Nếu vẫn muốn dùng localhost khi dev:
