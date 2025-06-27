@@ -55,6 +55,10 @@ export default async function Home() {
             <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto animate-in slide-in-from-bottom-4 duration-1000 delay-300">
               Khám phá hương vị ẩm thực độc đáo với những món ăn được chế biến
               từ nguyên liệu tươi ngon nhất
+              <br />
+              Admin account: admin@order.com
+              <br />
+              Password: 123456
             </p>
           </div>
 
